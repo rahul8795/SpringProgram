@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+        default-init-method="init"
+        default-destroy-method="destroy">
+    
+       <bean id="wishBean" class="com.cts.beans.WishBean" init-method = "localInit" destroy-method="localDestroy" >
+         <!--  <property name="name" value="AAA"></property>
+          <property name="message" value="Have a Good Day"></property>--> 
+        </bean>
+        <bean id="helloBean" class="com.cts.beans.HelloBean" >
+        <!--  <property name="name" value="AAA"></property>
+        <property name="message" value="Good Morning"></property>-->
+        </bean>
+        
+        <bean id="hiBean" class="com.cts.beans.HiBean" >
+        <!--  <property name="name" value="AAA"></property>
+        <property name="message" value="Good Morning"></property>-->
+        </bean>
+     
+</beans>
